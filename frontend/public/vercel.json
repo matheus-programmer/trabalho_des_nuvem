@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "backend/server.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "frontend/public/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "backend/server.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "frontend/public/$1"
+      }
+    ],
+    "env": {
+      "BACK4APP_APP_ID": "Ky5Bq9nLE90cYTcPtie9wKYdZKWsfsWKRnqzmIQo",
+      "BACK4APP_JS_KEY": "zcHQBkod7Oi5oPBHhJlk0A4cqwIjlDHe58IJxrri",
+      "NODE_ENV": "production"
+    }
+  }
