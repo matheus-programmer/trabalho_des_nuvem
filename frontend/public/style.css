@@ -408,25 +408,25 @@ form {
         margin: 5% auto;
         width: 95%;
     }
-
+    
     #task-list li {
         flex-direction: column;
     }
-
+    
     .task-buttons {
         flex-direction: row;
         margin-top: 1rem;
         width: 100%;
     }
-
+    
     .task-buttons button {
         flex: 1;
     }
-
+    
     header h1 {
         font-size: 2rem;
     }
-
+    
     .subtitle {
         font-size: 1rem;
     }
